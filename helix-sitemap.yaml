@@ -10,3 +10,4 @@ sitemaps:
         destination: /blog/sitemap.xml
         hreflang: en
         alternate: /{path}
+        
