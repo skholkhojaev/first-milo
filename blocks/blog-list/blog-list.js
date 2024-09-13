@@ -1,13 +1,14 @@
 import { getLibs } from '../../scripts/utils.js';
-
+console.log("import is working")
 const {
   html,
   render,
   useEffect,
   useState
 } = await import(`${getLibs()}/deps/htm-preact.js`)
-
+console.log("this is working")
 function Dog({ heading }) {
+  console.log("FUN Dog is working")
   return html `<li><h3>${heading}</h3></li>`;
 }
 
