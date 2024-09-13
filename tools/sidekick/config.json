@@ -1,6 +1,17 @@
 {
   "plugins": [
     {
+
+      "title": "Academy",
+      "id": "academy",
+      "environments": [
+       "dev",
+       "preview",
+       "live"
+      ],
+      "event": "academy"
+    },
+    {
       "id": "library",
       "title": "Library",
       "environments": [
@@ -71,16 +82,7 @@
       "url": "https://milo.adobe.com/tools/locale-nav",
       "includePaths": [
         "**.docx**"
-      ],
-
-      "title": "Academy",
-      "id": "academy",
-      "environments": [
-       "dev",
-       "preview",
-       "live"
-      ],
-      "event": "academy"
+      ]
     }
   ]
 }

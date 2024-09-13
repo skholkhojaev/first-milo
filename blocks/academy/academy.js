@@ -3,6 +3,7 @@ export default function init() {
   blocks.forEach((block) => {
     const blockVals = [...block.classList];
     const blockName = blockVals.shift();
+    if (blockName === 'content') return;
     block.classList.add('display-block-name');
     block.dataset.block = `${blockName} (${[...blockVals]})`;
   });

@@ -57,9 +57,6 @@ export function decorateArea(area = document) {
   }());
 }
 
-export async function useMiloSample() {
-  const { createTag } = await import(`${getLibs()}/utils/utils.js`);
-}
 
 export function initSidekick() {
   const initPlugins = async () => {
@@ -73,4 +70,9 @@ export function initSidekick() {
       initPlugins();
     });
   }
+}
+
+
+export async function useMiloSample() {
+  const { createTag } = await import(`${getLibs()}/utils/utils.js`);
 }
